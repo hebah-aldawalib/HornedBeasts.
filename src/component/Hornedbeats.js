@@ -26,8 +26,8 @@ incrementNumberOfPets = () => {
 
   render() {   
     return (
-      <div>
-<Card style={{ width: '18rem' }} >
+     
+<Card style={{ width: '18rem' , display:'inline-block' }} >
   <Card.Img variant="top" src={this.props.image_url} onClick={this.incrementNumberOfPets} />
   <Card.Body>
     <Card.Title>{this.props.title}</Card.Title>
@@ -40,7 +40,7 @@ incrementNumberOfPets = () => {
     <button onClick={this.incrementNumberOfPets}   >click</button>
   </Card.Body>
 </Card>  
-      </div>
+      
     )
   }
 }
